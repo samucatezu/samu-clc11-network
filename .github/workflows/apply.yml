@@ -13,7 +13,7 @@ env:
 
 jobs:
   Checkov:
-    name: 'Check TF Vuls'
+    name: 'Check TF Vul'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -32,7 +32,7 @@ jobs:
   Apply:
     name: 'Apply Changes'
     runs-on: ubuntu-latest
-    environment: aws_credentials
+    environment: aws
     needs: Checkov
 
     defaults:
