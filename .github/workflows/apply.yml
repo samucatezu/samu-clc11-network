@@ -13,7 +13,7 @@ env:
 
 jobs:
   Checkov:
-    name: 'Check TF Vuls'
+    name: 'Check TF Vulss'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
