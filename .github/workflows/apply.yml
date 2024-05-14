@@ -32,7 +32,7 @@ jobs:
   Apply:
     name: 'Apply Changes'
     runs-on: ubuntu-latest
-    environment: aws
+    environment: aws_credentials
     needs: Checkov
 
     defaults:
